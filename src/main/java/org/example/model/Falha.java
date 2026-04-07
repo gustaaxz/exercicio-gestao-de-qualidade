@@ -55,6 +55,9 @@ public class Falha {
 
     }
 
+    public Falha(int equipamentoId, String dataHoraOcorrencia, String descricao, String criticidade, String status, String tempoParadoHoras) {
+    }
+
     public Long getId() {
         return id;
     }

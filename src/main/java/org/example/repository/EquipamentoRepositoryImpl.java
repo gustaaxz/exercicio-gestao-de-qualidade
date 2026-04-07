@@ -55,7 +55,7 @@ public class EquipamentoRepositoryImpl {
                 return new Equipamento(id, nome, numeroDeSerie, areaSetor, statusOperacional);
 
             } else {
-                throw new RuntimeException("Equipamento não encontrado!");
+                throw new IllegalArgumentException("Equipamento não encontrado!");
             }
         }
     }
