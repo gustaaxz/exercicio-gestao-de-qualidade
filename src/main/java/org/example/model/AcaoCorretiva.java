@@ -7,14 +7,14 @@ package org.example.model;
         dataHoraInicio DATETIME NOT NULL,
         dataHoraFim DATETIME NOT NULL,
         responsavel VARCHAR(255) NOT NULL,
-descricaoAcao TEXT NOT NULL,
+        descricaoAcao TEXT NOT NULL,
 
-    -- Chave estrangeira ligando a Ação à Falha
-CONSTRAINT fk_acao_falha
-FOREIGN KEY (falhaId)
-REFERENCES Falha(id)
-ON DELETE RESTRICT -- Impede excluir uma falha se ela tiver ações corretivas
-);*/
+        -- Chave estrangeira ligando a Ação à Falha
+        CONSTRAINT fk_acao_falha
+        FOREIGN KEY (falhaId)
+        REFERENCES Falha(id)
+        ON DELETE RESTRICT -- Impede excluir uma falha se ela tiver ações corretivas
+        );*/
 
 import java.time.LocalDateTime;
 

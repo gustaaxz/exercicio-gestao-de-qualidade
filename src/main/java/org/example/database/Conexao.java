@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    private static String URL = "jdbc:mysql://localhost:3306/simulado?useSSL=false&serverTimezone=UTC";
 
+    private static String URL = "jdbc:mysql://localhost:3356/exercicio_gestao_de_qualidade?useSSL=false&serverTimezone=UTC";
     private static String USER = "root";
-
     private static String PASSWORD = "mysqlPW";
+
     public static Connection conectar() throws SQLException {
         return DriverManager.getConnection(URL,USER,PASSWORD);
     }
